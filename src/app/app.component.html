@@ -12,10 +12,19 @@
 </div>
 <div>
 <ul>
-<li *ngFor="let planeta of planetas">{{planeta.nombre}}</li>
-<li *ngFor="let planeta of planetas">{{planeta.distancia}}</li>
-<li *ngFor="let planeta of planetas">{{planeta.cantidadlunas}}</li>
-<li *ngFor="let planeta of planetas">{{planeta.masa}}</li>
+  <tr>
+<td *ngFor="let planeta of planetas">{{planeta.nombre}}</td>
+</tr>
+<tr>
+<td *ngFor="let planeta of planetas">{{planeta.distancia}}</td>
+</tr>
+<tr>
+  <td *ngFor="let planeta of planetas">{{planeta.cantidadlunas}}</td>
+</tr>
+<tr>
+  <td *ngFor="let planeta of planetas">{{planeta.masa}}</td>
+</tr>
+  
 </ul>
 </div>
 <ul>
